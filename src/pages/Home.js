@@ -2,10 +2,11 @@ import React from "react";
 import { GiAbstract003 } from "react-icons/gi";
 import ActivityCard from "../components/ActivityCard";
 import Question from "../components/Question";
+import Sidebar from "../components/Sidebar";
 import { activities } from "../Database/Data";
 const Home = () => {
   return (
-    <section className="grid lg:grid-cols-4 grid-cols-1 gap-5">
+    <section className="grid lg:grid-cols-4 grid-cols-1">
       <div className="lg:col-span-3 w-full">
         <div className="container py-10">
           <div className="py-5">
@@ -29,7 +30,11 @@ const Home = () => {
           <Question />
         </div>
       </div>
-      <div className="col-span-1 bg-orange-500 p-5"></div>
+      <div className="lg:col-span-1 w-full">
+        <div className=" py-10">
+          <Sidebar />
+        </div>
+      </div>
     </section>
   );
 };
