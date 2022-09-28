@@ -3,7 +3,7 @@ import { MdLocationOn } from "react-icons/md";
 const Profile = () => {
   return (
     <>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 lg:mt-10">
         <img
           src="images/office.jpg"
           alt="profile"

@@ -14,7 +14,7 @@ const ActivityCard = (props) => {
           Time Required <span className="text-slate-700">{timeRequired}</span>{" "}
           minutes
         </h1>
-        <button className="mt-3 text-white rounded text-xs p-3 font-bold w-full bg-slate-900 hover:bg-slate-600 uppercase">
+        <button className="mt-3 text-white rounded text-xs p-3 font-bold w-full bg-violet-700 hover:bg-slate-600 uppercase">
           add to list
         </button>
       </div>

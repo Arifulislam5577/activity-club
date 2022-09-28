@@ -7,7 +7,7 @@ import TimeCount from "./TimeCount";
 
 const Sidebar = () => {
   return (
-    <div className="p-5 bg-white">
+    <div className="p-5 ">
       <Profile />
       <BreakTimes />
       <TimeCount />
