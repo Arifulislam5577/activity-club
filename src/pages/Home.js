@@ -1,5 +1,7 @@
 import React from "react";
 import { GiAbstract003 } from "react-icons/gi";
+import ActivityCard from "../components/ActivityCard";
+import Question from "../components/Question";
 import { activities } from "../Database/Data";
 const Home = () => {
   return (
@@ -19,38 +21,12 @@ const Home = () => {
               Select today's activity
             </h3>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 my-5">
             {activities.map((activity) => (
-              <div
-                className="col-span-1 shadow rounded-md overflow-hidden"
-                key={activity.id}
-              >
-                <img
-                  src={activity.image}
-                  alt={activity.title}
-                  className="md:h-32 h-44 w-full object-cover"
-                />
-                <div className="p-4">
-                  <h2 className="text-sm font-bold uppercase text-slate-900">
-                    {activity.title}
-                  </h2>
-                  <p className="text-xs text-gray-600 my-3">
-                    {activity.disciption.split(" ").slice(0, 10).join(" ")}
-                  </p>
-                  <h1 className="text-xs font-bold text-gray-500">
-                    Time Required{" "}
-                    <span className="text-slate-700">
-                      {activity.timeRequired}
-                    </span>{" "}
-                    minutes
-                  </h1>
-                  <button className="mt-3 text-white rounded text-xs p-3 font-bold w-full bg-slate-900 hover:bg-slate-600 uppercase">
-                    add to list
-                  </button>
-                </div>
-              </div>
+              <ActivityCard {...activity} key={activity.id} />
             ))}
           </div>
+          <Question />
         </div>
       </div>
       <div className="col-span-1 bg-orange-500 p-5"></div>
