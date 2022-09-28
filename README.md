@@ -1,6 +1,6 @@
 # Programmer Daily Activities
 
-###`Assignment Requirement`
+### `Assignment Requirement`
 
 - Must have unique name that show in the title bar
 - Must have al least 6 activity card
@@ -14,7 +14,7 @@
 - Website must have to be responsive desktop and mobile
 - Click activity complete button and show toast
 
-###`Extra Marks`
+### `Extra Marks`
 
 - Meaning full component name
 - Distructure props
@@ -22,7 +22,7 @@
 - Minimum 10 commits in github
 - Use toastify
 
-###`Three question`
+### `Three question`
 
 - How does react js work?
 - What is the difference between state and props?
