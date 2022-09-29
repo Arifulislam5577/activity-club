@@ -11,7 +11,9 @@ const BreakTimes = ({ handleBreakTime, breakTime }) => {
           <button
             key={index}
             className={`${
-              breakTimes.includes(breakTime) ? "bg-violet-700" : "bg-white"
+              breakTimes.indexOf(breakTime) === index
+                ? "bg-violet-700 text-white"
+                : "bg-white"
             }
             p-2 rounded-full h-10 w-10 text-xs  shadow `}
             onClick={() => {
