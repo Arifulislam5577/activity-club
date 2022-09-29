@@ -11,7 +11,7 @@ const BreakTimes = ({ handleBreakTime }) => {
           <button
             key={index}
             className="bg-white
-            p-2 rounded-full h-10 w-10 text-xs  shadow"
+            p-2 rounded-full h-10 w-10 text-xs  shadow hover:bg-violet-700 hover:text-white"
             onClick={() => {
               handleBreakTime(time);
             }}

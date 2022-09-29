@@ -3,9 +3,9 @@ import React from "react";
 const ActivityCard = (props) => {
   const { id, title, disciption, timeRequired, image, handleAddToList } = props;
   return (
-    <div className="col-span-1 shadow rounded overflow-hidden">
-      <img src={image} alt={title} className="md:h-36 w-full object-cover" />
-      <div className="p-4 bg-white">
+    <div className="col-span-1 shadow rounded overflow-hidden bg-white">
+      <img src={image} alt={title} className="md:h-36 w-full object-cover " />
+      <div className="p-4 ">
         <h2 className="text-sm font-bold uppercase text-slate-900">{title}</h2>
         <p className="text-xs text-gray-600 my-3">
           {disciption.split(" ").slice(0, 10).join(" ")}

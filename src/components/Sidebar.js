@@ -16,9 +16,9 @@ const Sidebar = ({ totalTime }) => {
   };
   localStorage.setItem("breakTime", JSON.stringify(breakTime));
   return (
-    <div className="p-5 ">
+    <div className="p-14 lg:p-5">
       <Profile />
-      <BreakTimes handleBreakTime={handleBreakTime} breakTime={breakTime} />
+      <BreakTimes handleBreakTime={handleBreakTime} />
       <TimeCount totalTime={totalTime} />
       <BreakDetails breakTime={breakTime} />
       <ActivityComplete />

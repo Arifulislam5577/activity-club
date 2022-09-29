@@ -10,7 +10,9 @@ const Question = ({ questions }) => {
           <h2 className="bg-white mb-2 p-2 text-sm font-bold border-l-4 border-violet-700">
             {question.title}
           </h2>
-          <p className="bg-white p-2 text-sm">{question.answer}</p>
+          <p className="bg-white p-2 text-sm text-gray-500">
+            {question.answer}
+          </p>
         </figure>
       ))}
     </div>
