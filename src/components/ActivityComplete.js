@@ -5,7 +5,7 @@ const ActivityComplete = () => {
   return (
     <div className="my-5">
       <button
-        className="w-full p-3 capitalize bg-violet-700 rounded text-white"
+        className="w-full p-3 capitalize bg-slate-900 rounded text-white"
         onClick={notify}
       >
         activity complete

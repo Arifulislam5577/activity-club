@@ -5,7 +5,7 @@ const Profile = () => {
     <>
       <div className="flex items-center gap-2 lg:mt-10">
         <img
-          src="images/office.jpg"
+          src="https://avatars.githubusercontent.com/u/73895992?v=4"
           alt="profile"
           className="h-14 w-14 rounded-full   border-2 border-white"
         />

@@ -15,7 +15,7 @@ const ActivityCard = (props) => {
           minutes
         </h1>
         <button
-          className="mt-3 text-white rounded text-xs p-3 font-bold w-full bg-violet-700 hover:bg-slate-600 uppercase"
+          className="mt-3 text-white rounded text-xs p-3 font-bold w-full bg-slate-900 hover:bg-slate-600 uppercase"
           onClick={() => handleAddToList(id)}
         >
           add to list

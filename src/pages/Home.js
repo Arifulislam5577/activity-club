@@ -22,9 +22,9 @@ const Home = ({ activities, questions }) => {
           <div className="text-center lg:text-left py-10">
             <div className="flex gap-2 items-center justify-center lg:justify-start ">
               <span>
-                <GiAbstract003 size="28" color="#7B00F7" />
+                <GiAbstract003 size="28" color="#0F172A" />
               </span>
-              <h1 className="font-bold uppercase md:text-2xl text-xl text-violet-700">
+              <h1 className="font-bold uppercase md:text-2xl text-xl text-slate-900">
                 Programmer Daily Activity
               </h1>
             </div>

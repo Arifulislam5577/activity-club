@@ -7,7 +7,7 @@ const Question = ({ questions }) => {
       </h2>
       {questions.map((question) => (
         <figure key={question.id} className="my-3">
-          <h2 className="bg-white mb-2 p-2 text-sm font-bold border-l-4 border-violet-700">
+          <h2 className="bg-white mb-2 p-2 text-sm font-bold border-l-4 border-slate-900">
             {question.title}
           </h2>
           <p className="bg-white p-2 text-sm text-gray-500">
