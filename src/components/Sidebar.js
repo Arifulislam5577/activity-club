@@ -5,12 +5,12 @@ import BreakTimes from "./BreakTimes";
 import Profile from "./Profile";
 import TimeCount from "./TimeCount";
 
-const Sidebar = () => {
+const Sidebar = ({ totalTime }) => {
   return (
     <div className="p-5 ">
       <Profile />
       <BreakTimes />
-      <TimeCount />
+      <TimeCount totalTime={totalTime} />
       <BreakDetails />
       <ActivityComplete />
     </div>

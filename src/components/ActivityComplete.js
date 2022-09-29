@@ -1,7 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
 const ActivityComplete = () => {
-  const notify = () => toast("Activity Complete Successfully");
+  const notify = () => toast.success("Activity Complete Successfully");
   return (
     <div className="my-5">
       <button

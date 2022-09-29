@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GiAbstract003 } from "react-icons/gi";
 import ActivityCard from "../components/ActivityCard";
 import Question from "../components/Question";
@@ -6,6 +6,15 @@ import Sidebar from "../components/Sidebar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Home = ({ activities, questions }) => {
+  const [totalTime, setTotalTime] = useState(0);
+  const handleAddToList = (id) => {
+    const findActivity = activities.find((activity) => activity.id === id);
+
+    if (findActivity) {
+      setTotalTime((prev) => prev + findActivity.timeRequired);
+    }
+  };
+
   return (
     <section>
       <div className=" lg:mr-[20rem]">
@@ -25,17 +34,21 @@ const Home = ({ activities, questions }) => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 my-5">
             {activities.map((activity) => (
-              <ActivityCard {...activity} key={activity.id} />
+              <ActivityCard
+                {...activity}
+                key={activity.id}
+                handleAddToList={handleAddToList}
+              />
             ))}
           </div>
           <Question questions={questions} />
         </div>
       </div>
       <div className="bg-white fixed h-full right-0 top-0 w-[20rem] lg:block hidden">
-        <Sidebar />
+        <Sidebar totalTime={totalTime} />
       </div>
       <div className=" bg-white lg:hidden block">
-        <Sidebar />
+        <Sidebar totalTime={totalTime} />
       </div>
       <ToastContainer />
     </section>
