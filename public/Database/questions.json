@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "How does react js work?",
+    "answer": "ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props."
+  },
+  {
+    "id": 2,
+    "title": "What is the difference between state and props?",
+    "answer": "Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this. setState property is used to update the state values in the component."
+  },
+  {
+    "id": 3,
+    "title": "What is the usecase of useEffect hook without data load?",
+    "answer": "The useEffect Hook allows us to perform side effects in our components. Some examples of side effects are: directly updating the DOM, and timers.if we need to run the side effect every time a combination of state and props change. This use case may occur when our side effect depends on the state and props values. In this case, we need to pass both the state and props variables as dependencies."
+  }
+]

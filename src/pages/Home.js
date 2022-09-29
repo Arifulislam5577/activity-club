@@ -3,8 +3,9 @@ import { GiAbstract003 } from "react-icons/gi";
 import ActivityCard from "../components/ActivityCard";
 import Question from "../components/Question";
 import Sidebar from "../components/Sidebar";
-import { activities } from "../Database/Data";
-const Home = () => {
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const Home = ({ activities, questions }) => {
   return (
     <section>
       <div className=" lg:mr-[20rem]">
@@ -27,7 +28,7 @@ const Home = () => {
               <ActivityCard {...activity} key={activity.id} />
             ))}
           </div>
-          <Question />
+          <Question questions={questions} />
         </div>
       </div>
       <div className="bg-white fixed h-full right-0 top-0 w-[20rem] lg:block hidden">
@@ -36,6 +37,7 @@ const Home = () => {
       <div className=" bg-white lg:hidden block">
         <Sidebar />
       </div>
+      <ToastContainer />
     </section>
   );
 };

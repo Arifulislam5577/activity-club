@@ -1,6 +1,5 @@
 import React from "react";
-import { questions } from "../Database/Data";
-const Question = () => {
+const Question = ({ questions }) => {
   return (
     <div className="my-5">
       <h2 className="text-xl font-bold uppercase my-2 pb-2 border-b">
