@@ -18,7 +18,7 @@ const Sidebar = ({ totalTime }) => {
   return (
     <div className="p-14 lg:p-5">
       <Profile />
-      <BreakTimes handleBreakTime={handleBreakTime} />
+      <BreakTimes handleBreakTime={handleBreakTime} breakTime={breakTime} />
       <TimeCount totalTime={totalTime} />
       <BreakDetails breakTime={breakTime} />
       <ActivityComplete />
